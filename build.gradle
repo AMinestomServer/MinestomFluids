@@ -13,7 +13,6 @@ repositories {
     maven { url 'https://repo.spongepowered.org/maven' }
     maven { url 'https://repo.velocitypowered.com/snapshots/' }
     maven { url 'https://jitpack.io' }
-    maven { url 'https://repo.minestom.net/repository/maven-public/' }
 }
 
 java {
@@ -22,5 +21,5 @@ java {
 }
 
 dependencies {
-    implementation 'com.github.Minestom:Minestom:aebf72de90'
+    compileOnly 'com.github.hollow-cube:minestom-ce:d411c271cf'
 }
