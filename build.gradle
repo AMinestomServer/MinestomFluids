@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'maven-publish'
+
 }
 
 sourceCompatibility = 17
@@ -22,4 +24,12 @@ java {
 
 dependencies {
     compileOnly 'com.github.hollow-cube:minestom-ce:d411c271cf'
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
 }
